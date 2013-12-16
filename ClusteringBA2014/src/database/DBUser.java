@@ -1,4 +1,4 @@
-package commonClasses;
+package database;
 
 /*
  * 

@@ -10,7 +10,6 @@ import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 
-import commonClasses.DBUser;
 import commonClasses.Wine;
 
 /*
