@@ -2,7 +2,7 @@ package commonClasses;
 
 /*
  * 
- * Startet die grafische Oberflaeche
+ * Startet die grafische Oberflaeched
  * 
  */
 
