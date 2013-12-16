@@ -5,15 +5,13 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import java.util.Vector;
 import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 
+import commonClasses.DBUser;
 import commonClasses.Wine;
-
-import database.DBUser;
 
 /*
  * 
