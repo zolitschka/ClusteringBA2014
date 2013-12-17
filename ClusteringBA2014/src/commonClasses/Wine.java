@@ -16,15 +16,9 @@ public class Wine implements Comparable<Wine> {
 	private int grape[];
 	private int wineId = -1;
 	private String wineName;
-	private double wineScore = 0.0;
 	private int similarity = -1;
-	private float rating = -1;
 
-	private boolean svd = false;
-	private boolean kaufhistorie = false;
-	private boolean content = false;
-
-	private Vector<Wine> similarityList = new Vector<Wine>();
+	private Vector<Wine> wineSimilarityList = new Vector<Wine>();
 
 	private double price = -1;
 	private int quality = -1;
@@ -35,42 +29,9 @@ public class Wine implements Comparable<Wine> {
 	private int winery = -1;
 	private int wineStyle = -1;
 	private int year = -1;
-	DecimalFormat f = new DecimalFormat("#0.00");
 
 	public Wine() {
 
-	}
-
-	public boolean isSvd() {
-		return svd;
-	}
-
-	public void setSvd(boolean svd) {
-		this.svd = svd;
-	}
-
-	public boolean isKaufhistorie() {
-		return kaufhistorie;
-	}
-
-	public void setKaufhistorie(boolean kaufhistorie) {
-		this.kaufhistorie = kaufhistorie;
-	}
-
-	public boolean isContent() {
-		return content;
-	}
-
-	public void setContent(boolean content) {
-		this.content = content;
-	}
-
-	public float getRating() {
-		return rating;
-	}
-
-	public void setRating(float rating) {
-		this.rating = rating;
 	}
 
 	public int getId() {
@@ -198,20 +159,12 @@ public class Wine implements Comparable<Wine> {
 		return getId() + ": " + getName();
 	}
 
-	public double getWineScore() {
-		return wineScore;
-	}
-
-	public void setWineScore(double wineScore) {
-		this.wineScore = wineScore;
-	}
-
 	public Vector<Wine> getSimilarityList() {
-		return similarityList;
+		return wineSimilarityList;
 	}
 
-	public void setSimilarityList(Vector<Wine> similarityList) {
-		this.similarityList = similarityList;
+	public void setWineSimilarityList(Vector<Wine> wineSimilarityList) {
+		this.wineSimilarityList = wineSimilarityList;
 	}
 
 	public int getSimilarity() {
@@ -246,7 +199,6 @@ public class Wine implements Comparable<Wine> {
 		this.wineId = wine.getId();
 		this.wineName = wine.getName();
 		this.winery = wine.getWinery();
-		this.wineScore = wine.getWineScore();
 		this.wineStyle = wine.getWineStyle();
 		this.year = wine.getYear();
 	}

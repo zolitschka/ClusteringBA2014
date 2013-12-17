@@ -6,6 +6,6 @@ package methodFromSchulz;
  * 
  */
 
-public class method2 {
+public class Method {
 
 }

@@ -3,9 +3,8 @@ package similarityMeasures;
 import java.util.Collections;
 import java.util.Vector;
 
-import commonClasses.User;
 import commonClasses.Wine;
-import database.MySQLConnection;
+import database.Lists;
 
 /*
  * 
@@ -14,15 +13,15 @@ import database.MySQLConnection;
  */
 
 public class SimilarityList {
-	private static Vector<Wine> wineList = MySQLConnection.getWineList();
+	private static Vector<Wine> wineList = Lists.getWineList();
 
 	// für jeden Wein wird eine Aenlichkeitsliste berechnet
-	public SimilarityList(User user) {
+	public SimilarityList() {
 		new Similarity();
 		for (int i = 0; i < wineList.size(); i++) {
 			Wine wine1 = wineList.elementAt(i);
-			Vector<Wine> similarityList = getSimilarityList(wine1);
-			wine1.setSimilarityList(similarityList);
+			Vector<Wine> wineSimilarityList = getSimilarityList(wine1);
+			wine1.setWineSimilarityList(wineSimilarityList);
 		}
 	}
 
