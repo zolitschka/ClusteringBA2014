@@ -65,7 +65,7 @@ public class MySQLConnection {
 		return conn;
 	}
 
-	public static Vector<Wine> getWineContent() {
+	public static Vector<Wine> getWineList() {
 		Vector<Wine> wineVector = new Vector<Wine>();
 		conn = getInstance();
 

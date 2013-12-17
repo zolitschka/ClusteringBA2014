@@ -14,7 +14,7 @@ import database.MySQLConnection;
  */
 
 public class SimilarityList {
-	private static Vector<Wine> wineList = MySQLConnection.getWineContent();
+	private static Vector<Wine> wineList = MySQLConnection.getWineList();
 
 	// für jeden Wein wird eine Aenlichkeitsliste berechnet
 	public SimilarityList(User user) {

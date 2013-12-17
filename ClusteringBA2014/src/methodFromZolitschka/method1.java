@@ -1,4 +1,4 @@
-package method2;
+package methodFromZolitschka;
 
 /*
  * 
@@ -6,6 +6,6 @@ package method2;
  * 
  */
 
-public class method2 {
+public class method1 {
 
 }

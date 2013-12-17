@@ -1,4 +1,4 @@
-package method1;
+package methodFromSchulz;
 
 /*
  * 
@@ -6,6 +6,6 @@ package method1;
  * 
  */
 
-public class method1 {
+public class method2 {
 
 }
