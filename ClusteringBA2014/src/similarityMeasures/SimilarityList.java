@@ -20,8 +20,8 @@ public class SimilarityList {
 		new Similarity();
 		for (int i = 0; i < wineList.size(); i++) {
 			Wine wine1 = wineList.elementAt(i);
-			Vector<Wine> wineSimilarityList = getSimilarityList(wine1);
-			wine1.setWineSimilarityList(wineSimilarityList);
+			Vector<Wine> SimilarityList = getSimilarityList(wine1);
+			wine1.setWineSimilarityList(SimilarityList);
 		}
 	}
 
@@ -33,7 +33,7 @@ public class SimilarityList {
 			double sim = WeightedSimilarity.getSimilarity(wine1, wine2);
 			Wine tmp = new Wine();
 			tmp.copyWine(wine2);
-			tmp.setSimilarity(sim);
+			tmp.setWineSimilarity(sim);
 			similarityList.add(tmp);
 		}
 		Collections.sort(similarityList);

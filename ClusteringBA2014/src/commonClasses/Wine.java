@@ -1,6 +1,5 @@
 package commonClasses;
 
-import java.text.DecimalFormat;
 import java.util.Vector;
 
 /*
@@ -18,7 +17,7 @@ public class Wine implements Comparable<Wine> {
 	private String wineName;
 	private int similarity = -1;
 
-	private Vector<Wine> wineSimilarityList = new Vector<Wine>();
+	private Vector<Wine> SimilarityList = new Vector<Wine>();
 
 	private double price = -1;
 	private int quality = -1;
@@ -160,18 +159,18 @@ public class Wine implements Comparable<Wine> {
 	}
 
 	public Vector<Wine> getSimilarityList() {
-		return wineSimilarityList;
+		return SimilarityList;
 	}
 
-	public void setWineSimilarityList(Vector<Wine> wineSimilarityList) {
-		this.wineSimilarityList = wineSimilarityList;
+	public void setWineSimilarityList(Vector<Wine> SimilarityList) {
+		this.SimilarityList = SimilarityList;
 	}
 
 	public int getSimilarity() {
 		return similarity;
 	}
 
-	public void setSimilarity(double similarity) {
+	public void setWineSimilarity(double similarity) {
 		this.similarity = (int) (similarity * 100);
 	}
 
